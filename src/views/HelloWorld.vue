@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img src="http://sornk.cn/wp-content/uploads/2020/11/cropped-IMG_5289.jpg" alt="">
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -31,16 +32,23 @@
 </template>
 
 <script>
+import {sornk} from "@/api/sornk";
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+    sornk().then(data => {
+
+    }).catch(() => this.$message.warning("Liu lao ban yyds"))
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h3 {
   margin: 40px 0 0;
 }
