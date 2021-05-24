@@ -42,7 +42,7 @@ export default {
   mounted() {
     sornk().then(data => {
 
-    }).catch(() => this.$message.warning("Liu lao ban yyds"))
+    }).catch(() => this.$message.warning("More information, please visit http://sornk.cn"))
   }
 }
 </script>
