@@ -1,4 +1,4 @@
-# dti-web
+# DTIWebApplication
 
 ## Project setup
 ```
